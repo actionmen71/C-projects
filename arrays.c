@@ -15,11 +15,13 @@ int main()
 {
     int arr1[] = {1, 2, 4, 5, 6, 7, 8, 9, 45, 34};
     // First way to create array, we don't need to put array size here
+    // The size of array takes automatically as we put elements in the array
 
     // Printing arrays can be done in two  ways
     // 1.either do it manually by printing everything using prinf statemnet
     // 2. Or by using loop statements
 
+    printf("These array values are printed manually by print statements:\n");
     printf("%d\n", arr1[0]);
     printf("%d\n", arr1[2]);
     printf("%d\n", arr1[9]);
@@ -27,6 +29,38 @@ int main()
     // Output 1,4,34,6422284(Notice last value is so different because it doesn't exist in the array)
     // The array size is of 10: so arr1[0] to arr1[9]. the value of arr1[10] will give the actual address no of the next block of array
     // because array are stored in contiguous memory location.
+    // This last value can change
 
+    printf("These array values are printed by for loop:\n");
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d\n", arr1[i]);
+    }
+    printf("New array here!:\n");
+    int arr2[5] = {1, 2, 4, 5, 6, 7, 8, 9, 45, 34};
+    // Here we have made clear the size of array is 5
+    // But we have put 10 elements in the array so it will display warning
+    // but the program will still run
+    // But if we want to print all the 10 elements then it will only print 5
+    // and then it will repeat itslef.
+    // see the print statement below how the 10th position is repeating itself.
+
+    for (int i = 0; i < 10; i++)
+    {
+        printf("%d\n", arr2[i]);
+    }
+    // Output
+    // 1
+    // 2
+    // 4
+    // 5
+    // 6
+    // 1
+    // 2
+    // 4
+    // 5
+    // 6
+    printf("new statements here\n");
+    printf("%d", arr2[9]);
 
 }
