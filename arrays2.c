@@ -17,7 +17,20 @@ int main()
     // 4199120
     // 2711552
 
-    // 
+    // Only in this type of declaration do we need to enter the array value one by one
+    // so we use loop most of the time.
+
+    for (int i = 0; i < 5; i++)
+    {
+        printf("Enter the value for arr[%d]", i);
+        scanf("%d", &arr2[i]);
+    }
+    // output
+    // Enter the value for arr[0]1
+    // Enter the value for arr[1]2
+    // Enter the value for arr[2]3
+    // Enter the value for arr[3]4
+    // Enter the value for arr[4]5
 
     printf("Array 2 starts here!:\n");
     for (int i = 0; i < 5; i++)
