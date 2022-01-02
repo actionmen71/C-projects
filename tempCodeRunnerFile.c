@@ -1,0 +1,1 @@
+printf("enter value for arr[%d][%d]",i,j);
