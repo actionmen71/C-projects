@@ -1,7 +1,10 @@
 //  These are the format specifiers used to specify the format or datatype that we have used or will be using
 //  %d(integer) %c(character) %f(float) %l(long) %lf(double) %LF(long double)
-//  %c rather than denoting a letter it denotes the size whether it be a integer number of letter
+//  %c rather than denoting a letter it denotes the size whether it be a integer number of letter or symbol
 // In this program we have seen various scenarios regarding format specifier of char 
+// To store a string like "sdajfk" we will have to use array
+// char[]="hi how are you", now this array but still it is string
+// So it is array which only stores character
 
 #include<stdio.h>
 
