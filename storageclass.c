@@ -47,3 +47,29 @@
 // scope(local to the body)
 // dvi is garabe value
 // lifetime (till the local body is running or until it is defined)
+
+
+
+
+// declaration vs definition
+// declaration(no space reserved) just telling the compiler about variable eg:- int a;
+// defintion(declaration + space) defining the variable  eg:= int a=5;
+
+
+#include<stdio.h>
+#include"temporaryone.c"
+
+// external variable/global
+int p;
+int q=10;
+
+
+
+int main(){
+    int q=5;
+    extern int krishnatemp;
+    printf("%d\n",p);//output 0
+    printf("%d\n",q);//output 5 (compared to global , local have more precedence)
+    printf("%d\n",krishnatemp); 
+    return 0;
+}
